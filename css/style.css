@@ -1,0 +1,256 @@
+﻿@charset "utf-8";
+
+/**
+* style.css
+* Author URL : https://artcode.com.ua
+*/
+
+:root {
+    margin: 0;
+    padding: 0;
+    --background: #fff;
+    --text-color: #000;
+    --link-color: #0089c7;
+    --primary-color: #165fb9;
+    --action-color: #a6a6ff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #1b1b1b;
+      --text-color: #eaeaea;
+      --link-color: #b76c10;
+      --primary-color: #8916b9;
+    }
+  }
+
+* html, body {
+  margin: 10px 0 10px 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;   
+  }
+}
+
+header, footer, nav, article {
+  display: block;
+}
+
+img {
+  display: inline-block;
+  height: 100%;
+  max-width: 100%;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+#contacts a {
+  text-decoration: none;
+}
+
+.container{
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0px auto;
+  padding: 0px 15px 15px 0;
+}
+
+@media (max-width:767px){
+  .container{
+    max-width: none;
+  }
+}
+
+/* --- MAIN --- */
+
+.main {
+  font-size: 1rem;
+}
+
+.section {
+  margin: 10px;
+  padding: 10px;
+}
+
+.section_avatar {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section_description {
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid;
+  border-radius: 30px;
+  border-color: #ccc;
+}
+
+.section h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 1rem auto 0 auto;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  color: #999;
+  margin: 0 auto;
+}
+
+.avatar {
+  height: 300px;
+  width: 300px;
+}
+
+.avatar img {
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+}
+
+picture {
+  margin: auto;
+  max-width: 100%;
+}
+
+.section_actions {
+  padding: 1rem;
+/*  background-color: #eee; */
+}
+
+.section_actions .btn {
+  display: block;
+  width: 280px;
+  height: 50px;
+  margin: 10px auto 10px auto;
+  background: none;
+  border: 1px solid var(--action-color);
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  color: var(--action-color);
+}
+
+.section_actions .btn:hover {
+  background: var(--action-color);
+  color: #fff;
+}
+
+.section_actions a {
+  color: var(--action-color);
+}
+
+.section_actions a:hover {
+  color: #fff;
+}
+
+.section_social {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: .3s;
+  color: #333;
+}
+
+.sociial ul li .fab:hover {
+  color: #fff;
+}
+
+.social ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social ul li a:hover {
+  transform: translate(0, -5%);
+}
+
+.social li.facebook a:hover {
+  background-color: #3b5998;
+}
+
+.social li.instagram a:hover {
+  background-color: #cd486b;
+}
+
+.social li.twitter a:hover {
+  background-color: #00b6f1;
+}
+
+.social li.telegram a:hover {
+  background-color: #00a7f3;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  margin: 0;
+  padding: 0;
+  font-size:1.0rem;
+}
+
+.hidden {
+  display:none;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  border: 10px;
+}
